@@ -8,7 +8,7 @@ body{
 	font-family:'DM Mono',monospace;
 	text-align:center;
 }
-h2{
+h2{ 
 	color:#b8c9d2;
 }
 p{
@@ -24,6 +24,7 @@ h1{
 	background-color:lightgrey;
 	border-radius:5px;
 }
+
 
 .card-list{
 	position: absolute;
@@ -70,4 +71,37 @@ h1{
 }
 img{
 	width: 50%;
+}
+
+
+.player {
+	display: flex;
+	color: black;
+	align-self: flex-start;	
+	margin-right: 60%; 
+	height:50%;
+	width:25%;
+	padding:1.5rem;
+
+	border-radius:16px;
+	background: purple;
+	box-shadow: -1rem 0 3rem white;
+}
+
+.computer {
+	color: black;
+	display: flex;
+	align-self: flex-end;
+	height:50%;
+	width:25%;
+	padding:1.5rem;
+
+	border-radius:16px;
+	background: red;
+	box-shadow: -1rem 0 3rem white;
+}
+
+.battle {
+	display: flex;
+	align-content: space-around;
 }
