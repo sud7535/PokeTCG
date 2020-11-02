@@ -7,11 +7,42 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
-<body>
+<body> 
 	<h1>Pokemon gO`</h1>
+	<div class="battle">
+			
+		<div class="player", id = "player">
+			<h4>Player</h4>
+			<div>
+				<div class="card-author">
+					<a href="#" class="author-avatar">
+						<img src='src'></a>
+				</div>
+				<header class="card-header">
+					<h2>name</h2>
+					<p>Rank:rank</p>
+				</header>
+			</div>
+		</div>
+		
+		<div class="computer", id = "computer">
+			<h4>Computer</h4>
+			<div>
+				<div class="card-author">
+					<a href="#" class="author-avatar">
+						<img src='src'></a>
+				</div>
+				<header class="card-header">
+					<h2>name</h2>
+					<p>Rank:rank</p>
+				</header>
+			</div>
+		</div>
+	</div>
+
 	<section class="card-list">
 		{% for i in list%}
-		<div class="card">
+		<div class="card" onclick="disp_card()">
 			<div class="card-author">
 				<a href="#" class="author-avatar">
 					<img src={{i.url}}></a>
@@ -24,4 +55,9 @@
 		{%endfor%}
 	</section>
 </body>
+
+<script type="text/javascript">
+
+</script>
+
 </html>
