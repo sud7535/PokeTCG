@@ -136,7 +136,7 @@ def createAccount():
         c.execute('''INSERT INTO accounts(name,password,pokeId) VALUES (?,?,0)''',[x,y,])
         print("Account Created")
         conn.commit()
-    addCards(x,opponent_random())
+    addCards(x,adminoppnent_random(x))
     print("Added 20 Cards to get you started")
 
 
