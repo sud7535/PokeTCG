@@ -1,6 +1,6 @@
 /PokeTCG/__pycache__/*.pyc
 /backend/__pycache__/*.pyc
-*.png
 /*.sqlite3
 /__pycache__/
 /backend/migrations/__pycache__/*.pyc
+/backend/static/img/
