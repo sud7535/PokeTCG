@@ -98,14 +98,14 @@ def adminaddCards(username,arr):
 
 def addCards(username,arr):
     print(username)
-    with sqlite3.connect('backend/poke.db') as conn:
+    with sqlite3.connect('poke.db') as conn:
         c = conn.cursor()
         for i in arr:
             c.execute('''INSERT INTO accounts(name,password,pokeId) VALUES (?,"Me nahi bataunga",?)''',[username,int(i)])
         conn.commit()
 
 def subCards(username,arr):
-    with sqlite3.connect('backend/poke.db') as conn:
+    with sqlite3.connect('poke.db') as conn:
         c = conn.cursor()
         for i in arr:
             c.execute('''DELETE FROM accounts WHERE name = ? AND pokeId = ?''',[username,int(i)])

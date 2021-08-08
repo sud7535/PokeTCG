@@ -2,3 +2,5 @@
 /backend/__pycache__/*.pyc
 *.png
 /*.sqlite3
+/__pycache__/
+/backend/migrations/__pycache__/*.pyc
